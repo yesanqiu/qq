@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/qq_head">
+
+    </ImageView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/index_friend_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="username"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <TextView
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/index_friend_msg"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="user_msg"
+            android:textSize="15dp"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="right"
+        android:id="@+id/index_friend_has_message"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+</LinearLayout>

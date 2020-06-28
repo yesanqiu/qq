@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/qq_head">
+
+    </ImageView>
+    <TextView
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/new_friend_name"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:text="username"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+    <TextView
+        android:background="@color/colorGreen"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/new_accpet"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="接受"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+</LinearLayout>

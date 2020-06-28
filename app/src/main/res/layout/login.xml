@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    android:fitsSystemWindows="true"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/login_head"
+        android:layout_marginTop="180dp"
+        android:layout_width ="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:src="@drawable/qq_head"
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="105dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="账号"
+                android:textSize="20dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:inputType="text">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorDark">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="密码"
+                android:textSize="20dp">
+
+            </TextView>
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:inputType="textPassword">
+
+            </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_marginTop="55dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorDeepBlue"
+        android:text="登录">
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:text="找回密码">
+
+        </TextView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/colorDark">
+
+        </View>
+        <TextView
+            android:id="@+id/to_register"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:text="注册账号">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorBlue">
+        <ImageView
+            android:id="@+id/add_to_index"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/r">
+
+        </ImageView>
+        <TextView
+            android:paddingRight="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textColor="@color/colorWhite"
+            android:text="添加好友">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search">
+
+        </ImageView>
+        <EditText
+            android:id="@+id/add_search_id"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="请输入搜索">
+
+        </EditText>
+        <ImageView
+            android:id="@+id/add_search"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/qq_head">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/add_user_msg_line"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/qq_head">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/add_user_name"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="username"
+            android:textSize="22dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/add_add"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="添加好友"
+            android:textSize="20dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
